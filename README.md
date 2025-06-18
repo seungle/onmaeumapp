@@ -35,7 +35,6 @@
 | Framework        | Android Jetpack, Jetpack Compose |
 | IDE              | Android Studio                 |
 | Build System     | Gradle                         |
-| Architecture     | MVVM                           |
 
 
 
