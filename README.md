@@ -1,5 +1,5 @@
 # 🧠 Onmaeum - 감정 기록 기반 정신 건강 관리 앱
-
+![아이콘](ic_launcher-playstore.png)
 
 ## 📌 프로젝트 소개
 
