@@ -88,11 +88,17 @@
 
 ## 앱 아키텍처
 [User UI (Jetpack Compose)] 
+
       ↓
+
 [ViewModel (MVVM 구조)] 
+
       ↓
+
 [Room DB / DataStore / Repository]  
+ 
       ↓
+
 [로컬 데이터 저장 및 로직 처리]
 
 
