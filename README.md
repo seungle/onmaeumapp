@@ -30,125 +30,124 @@
 ---
 
 
+## ⚙️ 개발 환경
 
-## 개발 환경
-**Language**: Kotlin
+| 항목             | 내용                           |
+|------------------|--------------------------------|
+| Language         | Kotlin                         |
+| Framework        | Android Jetpack, Jetpack Compose |
+| IDE              | Android Studio                 |
+| Build System     | Gradle                         |
+| Architecture     | MVVM                           |
 
-**Framework**: Android Jetpack, Jetpack Compose
+---
 
-**IDE**: Android Studio
+## 🛠️ 기술 스택
 
-**Build System**: Gradle
+- **로컬 DB**: Room Database  
+- **설정 저장소**: Jetpack DataStore (Preferences)  
+- **UI 프레임워크**: Jetpack Compose + Material Design 3  
+- **비동기 처리**: Kotlin Coroutines  
+- **의존성 주입**: Hilt  
+- **알림/백그라운드 처리**: WorkManager  
+- **통계 시각화**: MPAndroidChart  
+- **NLP 감정 분석**: KoBERT 기반 모델 설계 (향후 연동 고려)  
+- **데이터 직렬화**: Gson  
 
-**Architecture**: MVVM
+---
 
-## 기술 스택
-**Local DB**: Room Database
+## ✨ 주요 기능
 
-**설정 저장**: Jetpack DataStore (Preferences)
-
-**UI**: Jetpack Compose + Material Design 3
-
-**DI**: Hilt
-
-**비동기 처리**: Kotlin Coroutines
-
-**알림/백그라운드**: WorkManager
-
-**통계 시각화**: MPAndroidChart
-
-**NLP 감정 분석**: KoBERT 기반 모델 설계 (추가 연동 고려)
-
-**데이터 변환**: Gson
-
-
-## 주요 기능
-1. 감정 기록
-- 감정 선택 (행복/슬픔/분노 등)
-
-- 스트레스 레벨 기록
-
+### 📝 감정 기록
+- 감정 선택 (예: 행복, 슬픔, 분노 등)
+- 스트레스 수준 기록
 - 자유 일기 작성
 
-2. 명상 콘텐츠
-- 감정 분석 기반 맞춤 명상 추천
-
+### 🧘 맞춤형 명상 콘텐츠
+- 감정 분석 기반 명상 추천
 - 오디오 기반 콘텐츠 재생
-
 - 명상 수행 기록 저장
 
-3. 통계 및 분석
-- 감정 변화 그래프
-
-- 스트레스 레벨 추이 시각화
-
+### 📊 통계 및 분석
+- 감정 변화 흐름 시각화
+- 스트레스 추이 분석
 - 명상 완료율 통계 차트
 
-4. 캘린더 & 타임라인
+### 📅 캘린더 & 타임라인
 - 감정 기록을 달력에 시각화
+- 하루 감정 흐름을 타임라인 형태로 제공
 
-- 하루 감정 흐름 타임라인 제공
-
-5. 알림 기능
+### 🔔 알림 기능
 - 감정 기록 리마인더
-
 - 명상 습관 형성 알림
+- WorkManager 기반 주기적 알림
 
-- WorkManager를 이용한 백그라운드 트리거
+### 💾 데이터 관리
+- 감정 및 명상 기록 백업/복원
+- 향후 Firebase 연동 고려 (확장성 확보)
 
-6. 데이터 관리
-- 백업/복원 기능
+---
 
-- 향후 Firebase 연동 가능 구조 고려
+## 🧱 앱 아키텍처
 
-## 앱 아키텍처
-```plaintext
 [User Interface (Jetpack Compose)]
-         ↓
+↓
 [ViewModel (MVVM 구조)]
-         ↓
+↓
 [Room DB / DataStore / Repository]
-         ↓
+↓
 [로컬 데이터 저장 및 로직 처리]
-```
 
-## 폴더 구조 요약:
-```
-├── data/          : DB, 모델 클래스
-├── ui/            : Compose 기반 화면
-├── viewmodel/     : ViewModel 모듈
-├── util/          : 날짜 처리 등 유틸
-├── notification/  : 알림 기능
-├── nlp/           : 감정 분석 관련
-└── backup/        : 백업/복원 로직
-```
+yaml
+코드 복사
 
-## API (내부 로직 기준)
-감정 기록 저장
-EmotionEntry Entity에 감정, 스트레스 수치, 일기 등을 저장
+---
 
-명상 추천 알고리즘
-감정 키워드 기반 추천 로직 구성
+## 📁 폴더 구조 요약
 
-향후 TensorFlow Lite + KoBERT 연동 계획
+├── data/ : DB, 모델 클래스
+├── ui/ : Compose 기반 화면
+├── viewmodel/ : ViewModel 모듈
+├── util/ : 날짜 처리 등 유틸
+├── notification/ : 알림 기능
+├── nlp/ : 감정 분석 관련
+└── backup/ : 백업/복원 로직
 
-통계 데이터 가공
-날짜별 감정 점수 평균
+yaml
+코드 복사
 
-스트레스 변화 추이 분석
+---
 
-## 특별한 점
-개인 감정 흐름 시각화 → 자기 인식 강화
+## 🔍 내부 로직 (API 예시)
 
-정서 기반 맞춤형 명상 추천 → 단순 콘텐츠 소비 이상
+### 감정 기록 저장  
+→ `EmotionEntry` Entity에 감정, 스트레스 수치, 일기, 날짜 저장
 
-작은 목표 형성 (알림 + 기록) → 습관화 설계 고려
+### 명상 추천 알고리즘  
+→ 감정 키워드 기반 명상 콘텐츠 추천  
+→ 향후 TensorFlow Lite + KoBERT 기반 감정 인식 자동화 고려
 
-모든 기능을 로컬 DB 기반으로 안정적으로 구현
+### 통계 데이터 분석  
+→ 날짜별 감정 점수 평균  
+→ 스트레스 변화 추이 시각화
 
-## 최종 목표
-사용자 감정 데이터를 기반으로 한 맞춤 솔루션 제공
+---
 
-감정 표현이 어려운 사용자에게 **"내 감정 보기 좋은 도구"**가 되는 앱
+## 🌟 온마음만의 차별성
 
-포트폴리오 및 논문 제출용으로 활용 (UX와 기능성 중심)
+- **감정 흐름 시각화** → 자기 인식 및 자기 관리 강화
+- **맞춤형 명상 추천** → 정서적 안정 유도
+- **작은 목표 형성 설계** → 알림과 기록을 통한 습관화
+- **로컬 DB 기반 독립형 앱** → 안정성과 개인정보 보호 강화
+
+---
+
+## 🎯 최종 목표
+
+> “온마음은 내 감정을 표현하고 이해하는 가장 좋은 도구가 되는 것이 목표입니다.”
+
+- 감정 표현이 어려운 사용자에게 감정 기록의 안전한 공간 제공  
+- 단순 감정 일기 앱을 넘어 **자기돌봄 기반 정서 관리 도구**로 발전  
+- 포트폴리오 및 논문 제출용으로 **UX와 기능성 중심의 완성도 있는 앱 개발**
+
+---
