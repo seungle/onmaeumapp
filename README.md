@@ -1,4 +1,4 @@
-## onmaeumapp
+## onmaeumapp- 감정 기록 기반 정신 건강 관리 
 
 ## 프로젝트 소개
 **감정 기록 기반 정신 건강 관리 앱 ‘온마음(Onmaeum)’**은 감정을 표현하기 어려운 사람들을 위해, 감정을 기록하고 시각화하며 명상 콘텐츠를 통해 정서적 안정과 자기 돌봄을 유도하는 모바일 애플리케이션입니다.
@@ -87,20 +87,14 @@
 - 향후 Firebase 연동 가능 구조 고려
 
 ## 앱 아키텍처
-[User UI (Jetpack Compose)] 
-
-      ↓
-
-[ViewModel (MVVM 구조)] 
-
-      ↓
-
-[Room DB / DataStore / Repository]  
- 
-      ↓
-
+```plaintext
+[User Interface (Jetpack Compose)]
+         ↓
+[ViewModel (MVVM 구조)]
+         ↓
+[Room DB / DataStore / Repository]
+         ↓
 [로컬 데이터 저장 및 로직 처리]
-
 
 폴더 구조 요약:
 
