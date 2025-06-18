@@ -88,22 +88,35 @@
 
 ## 앱 아키텍처
 >[User UI (Jetpack Compose)]
+>
+ 
        ↓
+
 [ViewModel (MVVM 구조)]
+  
        ↓
+
 [Room DB / DataStore / Repository]
+   
        ↓
+
 [로컬 데이터 저장 및 로직 처리]
 
 
 폴더 구조 요약:
 
 >├── data/          : DB, 모델 클래스
+
 ├── ui/            : Compose 기반 화면
+
 ├── viewmodel/     : ViewModel 모듈
+
 ├── util/          : 날짜 처리 등 유틸
+
 ├── notification/  : 알림 기능
+
 ├── nlp/           : 감정 분석 관련
+
 └── backup/        : 백업/복원 로직
 ## API (내부 로직 기준)
 감정 기록 저장
