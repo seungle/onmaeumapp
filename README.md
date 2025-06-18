@@ -1,7 +1,7 @@
 ## onmaeumapp
 
 ## 프로젝트 소개
-**감정 기록 기반 정신 건강 관리 앱 ‘온마음(Onmaeum)’**은 감정을 표현하기 어려운 사람들을 위해, 감정을 기록하고 시각화하며 명상 콘텐츠를 통해 정서적 안정과 자기 돌봄을 유도하는 모바일 애플리케이션입니다.
+--감정 기록 기반 정신 건강 관리 앱 ‘온마음(Onmaeum)’--은 감정을 표현하기 어려운 사람들을 위해, 감정을 기록하고 시각화하며 명상 콘텐츠를 통해 정서적 안정과 자기 돌봄을 유도하는 모바일 애플리케이션입니다.
 
 ## 개발 기간
 2024.11 ~ 2025.06 (8개월)
@@ -17,36 +17,35 @@
 
 
 ## 개발 환경
-Language: Kotlin
+--Language--: Kotlin
 
-Framework: Android Jetpack, Jetpack Compose
+--Framework--: Android Jetpack, Jetpack Compose
 
-IDE: Android Studio (Hedgehog)
+--IDE--: Android Studio
 
-Build System: Gradle
+--Build System--: Gradle
 
-Architecture: MVVM
+--Architecture--: MVVM
 
 ## 기술 스택
-Local DB: Room Database
+--Local DB--: Room Database
 
-설정 저장: Jetpack DataStore (Preferences)
+--설정 저장--: Jetpack DataStore (Preferences)
 
-UI: Jetpack Compose + Material Design 3
+--UI--: Jetpack Compose + Material Design 3
 
-DI: Hilt
+--DI--: Hilt
 
-비동기 처리: Kotlin Coroutines
+--비동기 처리--: Kotlin Coroutines
 
-알림/백그라운드: WorkManager
+--알림/백그라운드--: WorkManager
 
-통계 시각화: MPAndroidChart
+--통계 시각화--: MPAndroidChart
 
-NLP 감정 분석: KoBERT 기반 모델 설계 (추가 연동 고려)
+--NLP 감정 분석--: KoBERT 기반 모델 설계 (추가 연동 고려)
 
-데이터 변환: Gson
+--데이터 변환--: Gson
 
-기타 툴: Figma (UI 설계), Notion (기획)
 
 ## 주요 기능
 1. 감정 기록
