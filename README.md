@@ -17,92 +17,88 @@
 
 
 ## 개발 환경
---Language--: Kotlin
+**Language**: Kotlin
 
---Framework--: Android Jetpack, Jetpack Compose
+**Framework**: Android Jetpack, Jetpack Compose
 
---IDE--: Android Studio
+**IDE**: Android Studio
 
---Build System--: Gradle
+**Build System**: Gradle
 
---Architecture--: MVVM
+**Architecture**: MVVM
 
 ## 기술 스택
---Local DB--: Room Database
+**Local DB**: Room Database
 
---설정 저장--: Jetpack DataStore (Preferences)
+**설정 저장**: Jetpack DataStore (Preferences)
 
---UI--: Jetpack Compose + Material Design 3
+**UI**: Jetpack Compose + Material Design 3
 
---DI--: Hilt
+**DI**: Hilt
 
---비동기 처리--: Kotlin Coroutines
+**비동기 처리**: Kotlin Coroutines
 
---알림/백그라운드--: WorkManager
+**알림/백그라운드**: WorkManager
 
---통계 시각화--: MPAndroidChart
+**통계 시각화**: MPAndroidChart
 
---NLP 감정 분석--: KoBERT 기반 모델 설계 (추가 연동 고려)
+**NLP 감정 분석**: KoBERT 기반 모델 설계 (추가 연동 고려)
 
---데이터 변환--: Gson
+**데이터 변환**: Gson
 
 
 ## 주요 기능
 1. 감정 기록
-감정 선택 (행복/슬픔/분노 등)
+- 감정 선택 (행복/슬픔/분노 등)
 
-스트레스 레벨 기록
+- 스트레스 레벨 기록
 
-자유 일기 작성
+- 자유 일기 작성
 
 2. 명상 콘텐츠
-감정 분석 기반 맞춤 명상 추천
+- 감정 분석 기반 맞춤 명상 추천
 
-오디오 기반 콘텐츠 재생
+- 오디오 기반 콘텐츠 재생
 
-명상 수행 기록 저장
+- 명상 수행 기록 저장
 
 3. 통계 및 분석
-감정 변화 그래프
+- 감정 변화 그래프
 
-스트레스 레벨 추이 시각화
+- 스트레스 레벨 추이 시각화
 
-명상 완료율 통계 차트
+- 명상 완료율 통계 차트
 
 4. 캘린더 & 타임라인
-감정 기록을 달력에 시각화
+- 감정 기록을 달력에 시각화
 
-하루 감정 흐름 타임라인 제공
+- 하루 감정 흐름 타임라인 제공
 
 5. 알림 기능
-감정 기록 리마인더
+- 감정 기록 리마인더
 
-명상 습관 형성 알림
+- 명상 습관 형성 알림
 
-WorkManager를 이용한 백그라운드 트리거
+- WorkManager를 이용한 백그라운드 트리거
 
 6. 데이터 관리
-백업/복원 기능
+- 백업/복원 기능
 
-향후 Firebase 연동 가능 구조 고려
+- 향후 Firebase 연동 가능 구조 고려
 
 ## 앱 아키텍처
-plaintext
-복사
-편집
-[User UI (Jetpack Compose)]
+>[User UI (Jetpack Compose)]
        ↓
 [ViewModel (MVVM 구조)]
        ↓
 [Room DB / DataStore / Repository]
        ↓
 [로컬 데이터 저장 및 로직 처리]
+
+
 폴더 구조 요약:
 
-yaml
-복사
-편집
-├── data/          : DB, 모델 클래스
+>├── data/          : DB, 모델 클래스
 ├── ui/            : Compose 기반 화면
 ├── viewmodel/     : ViewModel 모듈
 ├── util/          : 날짜 처리 등 유틸
