@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/emotionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="오늘의 감정을 입력하세요"
+        android:padding="24dp"/>
+
+    <Button
+        android:id="@+id/saveEmotionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장하기" />
+</LinearLayout>
