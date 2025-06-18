@@ -1,9 +1,9 @@
-# onmaeumapp
+## onmaeumapp
 
-# 프로젝트 소개
+## 프로젝트 소개
 **감정 기록 기반 정신 건강 관리 앱 ‘온마음(Onmaeum)’**은 감정을 표현하기 어려운 사람들을 위해, 감정을 기록하고 시각화하며 명상 콘텐츠를 통해 정서적 안정과 자기 돌봄을 유도하는 모바일 애플리케이션입니다.
 
-# 개발 기간
+## 개발 기간
 2024.11 ~ 2025.06 (8개월)
 
 -요구사항 정의 및 UI 기획
@@ -16,7 +16,7 @@
 
 
 
-# 개발 환경
+## 개발 환경
 Language: Kotlin
 
 Framework: Android Jetpack, Jetpack Compose
@@ -27,7 +27,7 @@ Build System: Gradle
 
 Architecture: MVVM
 
-⚙️ 기술 스택
+## 기술 스택
 Local DB: Room Database
 
 설정 저장: Jetpack DataStore (Preferences)
@@ -48,7 +48,7 @@ NLP 감정 분석: KoBERT 기반 모델 설계 (추가 연동 고려)
 
 기타 툴: Figma (UI 설계), Notion (기획)
 
-📌 주요 기능
+## 주요 기능
 1. 감정 기록
 감정 선택 (행복/슬픔/분노 등)
 
@@ -87,7 +87,7 @@ WorkManager를 이용한 백그라운드 트리거
 
 향후 Firebase 연동 가능 구조 고려
 
-📐 앱 아키텍처
+## 앱 아키텍처
 plaintext
 복사
 편집
@@ -110,7 +110,7 @@ yaml
 ├── notification/  : 알림 기능
 ├── nlp/           : 감정 분석 관련
 └── backup/        : 백업/복원 로직
-✒️ API (내부 로직 기준)
+## API (내부 로직 기준)
 감정 기록 저장
 EmotionEntry Entity에 감정, 스트레스 수치, 일기 등을 저장
 
@@ -124,7 +124,7 @@ EmotionEntry Entity에 감정, 스트레스 수치, 일기 등을 저장
 
 스트레스 변화 추이 분석
 
-💡 특별한 점
+## 특별한 점
 개인 감정 흐름 시각화 → 자기 인식 강화
 
 정서 기반 맞춤형 명상 추천 → 단순 콘텐츠 소비 이상
@@ -133,7 +133,7 @@ EmotionEntry Entity에 감정, 스트레스 수치, 일기 등을 저장
 
 모든 기능을 로컬 DB 기반으로 안정적으로 구현
 
-🏁 최종 목표
+## 최종 목표
 사용자 감정 데이터를 기반으로 한 맞춤 솔루션 제공
 
 감정 표현이 어려운 사용자에게 **"내 감정 보기 좋은 도구"**가 되는 앱
