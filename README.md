@@ -16,7 +16,7 @@
 
 
 
-💻 개발 환경
+# 개발 환경
 Language: Kotlin
 
 Framework: Android Jetpack, Jetpack Compose
