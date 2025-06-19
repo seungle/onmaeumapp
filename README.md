@@ -43,12 +43,10 @@
 - **로컬 DB**: Room Database  
 - **설정 저장소**: Jetpack DataStore (Preferences)  
 - **UI 프레임워크**: Jetpack Compose + Material Design 3  
-- **비동기 처리**: Kotlin Coroutines  
-- **의존성 주입**: Hilt  
 - **알림/백그라운드 처리**: WorkManager  
 - **통계 시각화**: MPAndroidChart  
 - **NLP 감정 분석**: KoBERT 기반 모델 설계 (향후 연동 고려)  
-- **데이터 직렬화**: Gson  
+  
 
 
 ## ✨ 주요 기능
